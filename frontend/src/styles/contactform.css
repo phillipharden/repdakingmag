@@ -1,0 +1,268 @@
+.contact {
+    /* background-color: $bg-color-secondary; */
+    padding: 50px 0 100px;
+
+    /* @include xl {
+        padding: 100px 0 200px;
+    } */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    padding: 10px;
+    border-radius: 5px;
+
+    /* @include sm {
+        margin: 0 auto;
+    } */
+
+    .input-container {
+
+        /* @include xs {
+            width: 92%;
+            margin: 0 0 10px;
+        } */
+
+        /* @include md {
+            width: 100%;
+        } */
+
+        label {
+            text-transform: uppercase;
+            font-weight: 600;
+
+            /* @include xl {
+                font-size: 2.6rem;
+            } */
+        }
+
+        input,
+        textarea {
+            /* font-family: $main-font; */
+            width: 100%;
+            padding: 10px;
+            font-size: 1.4rem;
+            letter-spacing: 1px;
+            border-radius: 5px;
+            border: none !important;
+        }
+
+
+
+        input::placeholder,
+        textarea::placeholder {
+            opacity: 0.5;
+        }
+
+        input[type="submit"] {
+            /* background-color: $primary-color; */
+            /* color: $text-color-light; */
+            border: none;
+            width: 100px;
+            /* // padding: 10px; */
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            /* background-color: $primary-color-medium; */
+        }
+    }
+
+
+
+}
+
+.call-container {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+
+
+    .call-link {
+        text-align: center;
+
+        .call-icon {
+            background-image: url("../assets/icons/call.png");
+            display: inline-block;
+            text-indent: -9999px;
+            background-size: 35px;
+            padding: 5px 15px;
+            margin: 0 10px;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 150px;
+            transition: all 0.6s ease-out;
+        }
+    }
+
+}
+
+.confirmation-message {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 1s ease;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    /* background-color: $bg-color; */
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    /* @include xs {
+        width: 90vw;
+        height: auto;
+    } */
+
+    /* @include md {
+        width: 400px;
+        height: 300px;
+    } */
+}
+
+.error-message {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 1s ease;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    /* background-color: $bg-color; */
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    /* @include xs {
+        width: 90vw;
+        height: auto;
+    } */
+
+    /* @include md {
+        width: 400px;
+        height: 300px;
+    } */
+
+    h4 {
+        /* color: $error-color; */
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 3rem;
+        letter-spacing: 4px;
+    }
+
+    .error-message-container {
+        /* background-color: $bg-color; */
+        padding: 20px;
+        border-radius: 5px;
+        align-items: center;
+        /* background-color: $primary-color-light; */
+        padding: 20px;
+        border-radius: 2px;
+        /* color: $primary-color-dark; */
+
+        p {
+            letter-spacing: 1px;
+            text-align: justify;
+            font-size: 1.6rem;
+        }
+    }
+
+
+
+
+
+}
+
+/* // MESSAGE CONFIRMATION */
+.sent-message {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 1s ease;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    /* background-color: $bg-color; */
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    /* @include xs {
+        width: 90vw;
+        height: auto;
+    } */
+
+    /* @include md {
+        width: 400px;
+        height: 300px;
+    } */
+
+    h4 {
+        text-transform: uppercase;
+        font-weight: 600;
+
+        /* @include xs {
+            font-size: 2rem;
+        } */
+    }
+
+    .sent-message-container {
+        /* background-color: $bg-color; */
+        padding: 5px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            /* color: $primary-color-dark; */
+            border-radius: 5px;
+            padding: 5px;
+            text-align: justify;
+            font-size: 1.4rem;
+        }
+    }
+}
+
+
+
+
+/* .test {
+    @include xs {
+        // 0px
+        color: red;
+    }
+
+    @include sm {
+        // 480px
+        color: blue;
+    }
+
+    @include md {
+        // 720px
+        color: green;
+    }
+
+    @include lg {
+        // 960px
+        color: orange;
+    }
+
+    @include xl {
+        // 1200px
+        color: yellow;
+    }
+} */

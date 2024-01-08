@@ -1,0 +1,54 @@
+.header {
+  color: #353935;
+}
+
+.header a {
+  color: #353935;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/*^ Nav Links */
+.animated {
+	position: relative;
+	
+	&:before{
+		content: '';
+		display: block;
+		position: absolute;
+	}
+}
+
+.animated.scaleCenter {
+	&:before {
+		height: 2px;
+		width: 100%;
+		left: 0;
+		bottom: -6px;
+		background-color: #353935;
+		transform: scale(0);
+		transition: all ease-in-out 200ms;
+	}
+	
+	&:hover {
+		&:before {
+			transform: scale(1);
+		}
+	}
+}
+
+
+
+/*^ HOME */
+
+.home{
+  height: 60vh;
+}
+
+
+
+
+/*^ FOOTER */
+.copyright{
+  font-size: 12px;
+}
